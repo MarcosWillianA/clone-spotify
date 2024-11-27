@@ -12,7 +12,7 @@
 <body>
     <header>
         <nav>
-            <div id="menu-navegacao" class="flex flex-wrap justify-between items-center p-2 bg-black">
+            <div id="menu-navegacao" class="flex flex-wrap justify-between items-center w-full p-2 bg-black bg-opacity-50 fixed">
                 <div id="logomarca" class="min-w-48 w-2/3 max-w-xl mr-6">
                     <img src="imgs/spotify.svg" alt="Spotify" width="191" class="block">
                 </div><!--#logomarca-->
@@ -32,18 +32,19 @@
     </header>
     <main>
         <section>
-            <div id="sessao-carrossel" class="p-2">
-                <div id="carrossel">
-                    <div id="musica-para-todos">
-                        <h1>Música para todos</h1>
-                        <div id="botoes">
-                            <button>Aproveite o Spotify Free</button>
-                            <button>Obter Spotify Premium</button>
-                        </div><!--botoes-->
-                    </div><!--#musica-para-todos-->
-                    <div id="melhores-radios">
-                        
-                    </div>
+            <div id="sessao-carrossel" class="flex justify-center items-center h-screen p-2 border border-yellow-300 text-white">
+                <div id="carrossel" class="flex items-center h-1/2 border border-green-300">
+                    <span id="seta-esquerda" class="pr-2"><i class="fa-solid fa-angle-left"></i></span>
+                    <div id="display-carrossel" class="h-full border border-blue-400">
+                        <div id="musica-para-todos" class="flex flex-col flex-wrap justify-between gap-8 py-8">
+                            <h1 class="text-4xl font-black text-center">Música para todos</h1>
+                            <div id="botoes" class="flex flex-col justify-between gap-4">
+                                <button class="p-2 rounded-3xl border border-white bg-indigo-500">APROVEITE O SPOTIFY FREE</button>
+                                <button class="p-2 rounded-3xl border border-white">OBTER SPOTIFY PREMIUM</button>
+                            </div>
+                        </div>
+                    </div><!--#display-carrossel-->
+                    <span id="seta-direita" class="pl-2"><i class="fa-solid fa-angle-right"></i></span>
                 </div><!--#carrossel-->
             </div><!--#sessao-carrossel-->
         </section>
