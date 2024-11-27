@@ -12,14 +12,42 @@
 <body>
     <header>
         <nav>
-            <div id="menu-navegacao">
-                <div id="logomarca">
-                    <img src="imgs/spotify.svg" alt="Spotify" class="min-w-2/3">
-                </div>
-                <div id="botao-menu"></div>
-                <div id="lista-menu"></div>
-            </div>
+            <div id="menu-navegacao" class="flex flex-wrap justify-between items-center p-2 bg-black">
+                <div id="logomarca" class="min-w-48 w-2/3 max-w-xl mr-6">
+                    <img src="imgs/spotify.svg" alt="Spotify" width="191" class="block">
+                </div><!--#logomarca-->
+                <div id="ativar-menu">
+                    <button id="botao-menu" type="button" class="p-3 flex items-center justify-center rounded border border-white text-white transition duration-300">
+                        <i id="icone-barras" class="fa-solid fa-bars transition-opacity duration-300 ease-in-out"></i>
+                        <i id="icone-X" class="fa-solid fa-x absolute opacity-0 transition-all duration-500 ease-in-out""></i>
+                    </button>
+                </div><!--#ativar-menu-->
+                <div id="lista-menu" class="min-w-48 w-2/3 max-w-xl">
+                    <ul id="lista-nao-ordenada-menu" class="text-white">
+                        <!--Menu inserido dinamicamente-->
+                    </ul>
+                </div><!--#lista-menu-->
+            </div><!--#menu-navegacao-->
         </nav>
     </header>
+    <main>
+        <section>
+            <div id="sessao-carrossel" class="p-2">
+                <div id="carrossel">
+                    <div id="musica-para-todos">
+                        <h1>Música para todos</h1>
+                        <div id="botoes">
+                            <button>Aproveite o Spotify Free</button>
+                            <button>Obter Spotify Premium</button>
+                        </div><!--botoes-->
+                    </div><!--#musica-para-todos-->
+                    <div id="melhores-radios">
+                        
+                    </div>
+                </div><!--#carrossel-->
+            </div><!--#sessao-carrossel-->
+        </section>
+    </main>
+    <script src="script/script.js"></script>
 </body>
 </html>
