@@ -19,7 +19,7 @@
                 <div id="ativar-menu">
                     <button id="botao-menu" type="button" class="p-3 flex items-center justify-center rounded border border-white text-white transition duration-300">
                         <i id="icone-barras" class="fa-solid fa-bars transition-opacity duration-300 ease-in-out"></i>
-                        <i id="icone-X" class="fa-solid fa-x absolute opacity-0 transition-all duration-500 ease-in-out""></i>
+                        <i id="icone-X" class="fa-solid fa-x absolute opacity-0 transition-all duration-500 ease-in-out"></i>
                     </button>
                 </div><!--#ativar-menu-->
                 <div id="lista-menu" class="min-w-48 w-2/3 max-w-xl">
@@ -32,22 +32,21 @@
     </header>
     <main>
         <section>
-            <div id="sessao-carrossel" class="flex justify-center items-center h-screen p-2 border border-yellow-300 text-white">
-                <div id="carrossel" class="flex items-center h-1/2 border border-green-300">
-                    <span id="seta-esquerda" class="pr-2"><i class="fa-solid fa-angle-left"></i></span>
-                    <div id="display-carrossel" class="h-full border border-blue-400">
-                        <div id="musica-para-todos" class="flex flex-col flex-wrap justify-between gap-8 py-8">
-                            <h1 class="text-4xl font-black text-center">Música para todos</h1>
-                            <div id="botoes" class="flex flex-col justify-between gap-4">
-                                <button class="p-2 rounded-3xl border border-white bg-indigo-500">APROVEITE O SPOTIFY FREE</button>
-                                <button class="p-2 rounded-3xl border border-white">OBTER SPOTIFY PREMIUM</button>
-                            </div>
-                        </div>
-                    </div><!--#display-carrossel-->
-                    <span id="seta-direita" class="pl-2"><i class="fa-solid fa-angle-right"></i></span>
-                </div><!--#carrossel-->
+            <div id="sessao-carrossel" class="flex justify-center items-center h-screen p-2 border border-yellow-300">
+                <div id="carrossel" class="flex items-center border border-orange-500">
+                    <span id="seta-esquerda" class="block p-1"><i class="fa-solid fa-angle-left text-white"></i></span>
+                    <div id="container-carrossel" class="flex transition-transform duration-500 ease-in-out overflow-hidden">
+                        <div id="musica-para-todos" class="w-full border border-green-200">
+                            <h1 class="text-center text-white text-4xl font-black">Música para todos</h1>
+                            <button class="px-2 py-1 rounded-2xl border border-white bg-indigo-500 text-white hover:bg-indigo-600">APROVEITE O SPOTIFY FREE</button>
+                            <button class="px-2 py-1 rounded-2xl border border-white text-white">OBTER SPOTIFY PREMIUM</button>
+                        </div><!--#musica-para-todos-->
+                        
+                    </div><!--#container-carrossel-->
+                    <span id="seta-direita" class="block p-1"><i class="fa-solid fa-angle-right text-white"></i></span>
+                </div><!--#display-carrossel-->
             </div><!--#sessao-carrossel-->
-        </section>
+        </section>        
     </main>
     <script src="script/script.js"></script>
 </body>
