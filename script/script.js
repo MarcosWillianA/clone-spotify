@@ -49,3 +49,18 @@ function esconderMenu() {
     listaNaoOrdenadaMenu.classList.add('hidden');
 }
 
+function ajustarVisibilidadeMenu() {
+    
+    if (window.innerWidth >= 768) {
+      listaNaoOrdenadaMenu.classList.remove('hidden');      
+    } else {
+      listaNaoOrdenadaMenu.classList.add('hidden')  // Esconder a lista
+    }
+  }
+
+  // Chamar a função assim que a página carregar
+  window.addEventListener('load', ajustarVisibilidadeMenu);
+
+  // Monitorar mudanças no tamanho da janela
+  window.addEventListener('resize', ajustarVisibilidadeMenu);
+
