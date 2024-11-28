@@ -23,6 +23,7 @@ botaoMenu.addEventListener('click', () => {
 function mostrarMenu() {
     // Limpa os itens existentes antes de recriar
     listaNaoOrdenadaMenu.innerHTML = '';
+    listaNaoOrdenadaMenu.classList.remove('hidden');
 
     itensDaListaMenu.forEach((item, indice) => {
         setTimeout(() => {
@@ -45,5 +46,6 @@ function esconderMenu() {
             setTimeout(() => li.remove(), 300);
         }, indice * 20);
     })
+    listaNaoOrdenadaMenu.classList.add('hidden');
 }
 

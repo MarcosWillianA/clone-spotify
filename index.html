@@ -22,8 +22,8 @@
                         <i id="icone-X" class="fa-solid fa-x absolute opacity-0 transition-all duration-500 ease-in-out"></i>
                     </button>
                 </div><!--#ativar-menu-->
-                <div id="lista-menu" class="min-w-48 w-2/3 sm:hidden md:w-1/2 max-w-xl">
-                    <ul id="lista-nao-ordenada-menu" class="text-white md:flex gap-4">
+                <div id="lista-menu" class="min-w-48 w-2/3 md:w-1/2 max-w-xl">
+                    <ul id="lista-nao-ordenada-menu" class="hidden text-white md:flex gap-4">
                         <!--Menu inserido dinamicamente-->
                         <li><a href="#">Premium</a></li>
                         <li><a href="#">Ajuda</a></li>
@@ -91,11 +91,11 @@
     </main>
     <footer>
         <div id="rodape" class="p-2 bg-black text-white">
-            <div id="menu-rodape">
-                <div id="logomarca-rodape">
+            <div id="menu-rodape" class="max-w-3xl m-auto">
+                <div id="logomarca-rodape" class="w-1/5 md:m-auto">
                     <img src="imgs/spotify.svg" alt="Logomarca Spotify" width="100px">
                 </div><!--#logomarca-rodape-->
-                <div id="sobre" class="py-2">
+                <div id="sobre" class="py-2 md:flex justify-around gap-6">
                     <ul>
                         <h3 class="py-2 text-slate-400">COMPANY</h3>
                         <li class="text-xs"><a href="#">Sobre</a></li>
@@ -117,7 +117,7 @@
                     </ul>
                 </div><!--#sobre-->
             </div><!--#menu-rodape-->
-            <div id="redes-sociais" class="py-2 flex justify-evenly">
+            <div id="redes-sociais" class="max-w-80 md:m-auto py-2 flex justify-evenly">
                 <a href="#"><img src="imgs/facebook.png" alt="Facebook"></a>
                 <a href="#"><img src="imgs/instagram.png" alt="Instagram"></a>
                 <a href="#"><img src="imgs/twitter.png" alt="Twitter"></a>
