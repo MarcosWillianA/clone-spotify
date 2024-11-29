@@ -39,18 +39,21 @@
     </header>
     <main>
         <section>
-            <div id="sessao-carrossel" class="flex justify-center items-center h-screen p-2">
-                <div id="carrossel" class="flex items-center border border-orange-500">
-                    <span id="seta-esquerda" class="block p-1"><i class="fa-solid fa-angle-left text-white"></i></span>
-                    <div id="container-carrossel" class="flex transition-transform duration-500 ease-in-out overflow-hidden">
-                        <div id="musica-para-todos" class="w-full border border-green-200">
-                            <h1 class="text-center text-white text-4xl font-black">Música para todos</h1>
-                            <button class="px-2 py-1 rounded-2xl border border-white bg-indigo-500 text-white hover:bg-indigo-600">APROVEITE O SPOTIFY FREE</button>
-                            <button class="px-2 py-1 rounded-2xl border border-white text-white">OBTER SPOTIFY PREMIUM</button>
+            <div id="sessao-carrossel" class="flex justify-center items-center h-screen max-w-3xl m-auto p-2">
+                <div id="carrossel" class="flex items-center w-full h-full border border-orange-500 relative">
+                    <span id="seta-esquerda" class="block p-1 "><i class="fa-solid fa-angle-left text-white text-5xl absolute top-1/2 left-0 opacity-50"></i></span>
+                    <div id="container-carrossel" class="flex w-full h-3/5 transition-transform duration-500 ease-in-out overflow-hidden">
+                        <div id="musica-para-todos" class="flex flex-col justify-between gap-8 w-full h-full border border-green-200">
+                            <h1 class="my-2 text-center text-white text-4xl md:text-6xl font-black">Música para todos</h1>
+                            <div id="botoes" class="flex flex-wrap gap-2 my-2 py-2">
+                                <button class="my-2 m-auto px-4 py-2 rounded-2xl bg-indigo-500 md:text-xl text-white hover:bg-indigo-600">APROVEITE O SPOTIFY FREE</button>
+                                <button class="my-2 m-auto px-4 py-2 rounded-2xl border-2 border-white md:text-xl text-white ">OBTER SPOTIFY PREMIUM</button>
+                            </div>
                         </div><!--#musica-para-todos-->
+
                         
                     </div><!--#container-carrossel-->
-                    <span id="seta-direita" class="block p-1"><i class="fa-solid fa-angle-right text-white"></i></span>
+                    <span id="seta-direita" class="block p-1"><i class="fa-solid fa-angle-right text-white text-5xl absolute top-1/2 right-0 opacity-50"></i></span>
                 </div><!--#display-carrossel-->
             </div><!--#sessao-carrossel-->
         </section>        
