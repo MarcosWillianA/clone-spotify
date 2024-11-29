@@ -4,8 +4,12 @@ const listaNaoOrdenadaMenu = document.querySelector('#lista-nao-ordenada-menu');
 const itensDaListaMenu = ['Premium', 'Ajuda', 'Baixar', 'Inscrever-se', 'Entrar'];
 const iconeBarras = document.querySelector('#icone-barras');
 const iconeX = document.querySelector('#icone-X');
+const containerCarrossel = document.getElementById('container-carrossel');
+const setaEsquerda = document.getElementById('seta-esquerda');
+const setaDireita = document.getElementById('seta-direita');
 
 let menuAberto = false;
+let indiceAtual = 0;
 
 botaoMenu.addEventListener('click', () => {
     iconeBarras.classList.toggle('opacity-0');
@@ -64,3 +68,4 @@ function ajustarVisibilidadeMenu() {
   // Monitorar mudanças no tamanho da janela
   window.addEventListener('resize', ajustarVisibilidadeMenu);
 
+  
